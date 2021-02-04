@@ -1,0 +1,56 @@
+#navbar {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.flexitem {
+    border: 1px dashed red;
+    flex-grow: 1;
+}
+
+.padded-item {
+    padding: 5em 0 5em 0;
+}
+
+#title-background {
+    background: radial-gradient(ellipse at center, orange -25%, black 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a.navitem {
+    color: orange;
+    font-size: 1.25em;
+    border: 1px dashed darkseagreen;
+    margin-left: .5em;
+}
+
+h1 {
+    font-family: 'Abel', cursive;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+.default-text {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+#about-title {
+    text-align: center;
+    font-family: 'Abel', cursive;
+}
