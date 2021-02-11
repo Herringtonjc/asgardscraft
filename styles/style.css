@@ -2,11 +2,18 @@ body {
         background-color: #010F2B;
 }
 
+#navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .navitem {
     padding-left: 0.3em;
+    font-family: 'abel', cursive;
     display: inline;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #0DC8FE;
     transition: 1s color;
     -webkit-transition: color 1s;
@@ -24,11 +31,11 @@ body {
     display: block;
     margin: auto;
     width: 50%;
-    animation: fadeIn ease 5s;
-    -webkit-animation: fadeIn ease 5s;
-    -moz-animation: fadeIn ease 5s;
-    -ms-animation: fadeIn ease 5s;
-    -o-animation: fadeIn ease 5s;
+    animation: fadeIn ease 8s;
+    -webkit-animation: fadeIn ease 8s;
+    -moz-animation: fadeIn ease 8s;
+    -ms-animation: fadeIn ease 8s;
+    -o-animation: fadeIn ease 8s;
 }
 
 @keyframes fadeIn {
@@ -36,8 +43,20 @@ body {
     100% {opacity: 1;}
 }
 
+#head {
+    height: 100vh;
+}
+
 .text-area {
     background-color: #fff;
+    height: auto;
+    padding: 5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Amita', cursive;
+    font-size: 3.5em;
 }
 
 .default-text {
@@ -48,6 +67,7 @@ body {
 
 .portfolio {
     display: grid;
+    padding: 5em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-gap: 1em;
