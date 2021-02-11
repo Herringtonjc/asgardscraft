@@ -6,7 +6,7 @@ body {
     padding-left: 0.3em;
     display: inline;
     text-decoration: none;
-    font-size: 1.45em;
+    font-size: 1.2em;
     color: #0DC8FE;
     transition: 1s color;
     -webkit-transition: color 1s;
@@ -50,31 +50,45 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, 1fr);
-    row-gap: 1em;
+    grid-gap: 1em;
+    justify-content: center;
     justify-items: center;
+    align-content: center;
 }
 
-.grid {
-    height: 20em;
-    width: 19em;
-    opacity: 50%;
+.portfolio img {
+    height: 15em;
+    width: 15em;
+    opacity: 30%;
 }
 
-.grid:hover {
+.portfolio img:hover {
     opacity: 100%;
+    cursor: pointer;
 }
 
-#overlay {
+#lightbox {
     position: fixed;
-    display: none;
-    z-index: 2;
+    z-index: 100;
+    top: 0;
     width: 100%;
     height: 100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    padding: .8em;
+    background-color: black;
+    border: 5px solid white;
 }
 
 @media screen and (max-width: 1150px) {
