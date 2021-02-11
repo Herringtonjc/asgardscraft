@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/reset.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
@@ -24,7 +23,6 @@
             </div>
         </header>
         <main>
-            <div id="overlay" onClick="off()"></div>
             <section id="head">
                 <img src="images/logo-with-text.png" id="logo">
             </section>
@@ -43,19 +41,5 @@
             </section>
         </main>
     </body>
-    <script>
-        let images = document.getElementsByClassName("grid");
-
-        for (let i = 0; i < images.length; i++) {
-            images[i].addEventListener("click", on);
-        }
-
-        function on() {
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
+    <script type="text/javascript" src="scripts/overlay.js"></script>
 </html>
