@@ -1,0 +1,61 @@
+#_<!DOCTYPE html>
+<html>
+<head>
+    <title>The Wizard's Craft</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="D&D Miniture paintings and commissions">
+    <meta name="keywords"
+        content="D&D&, Dungeons and Dragons, minis, miniatures, painting, terrains, terrain, scatter terrain, crafting, craft, tabletop, tiles, boards, 28mm">
+    <meta name="author" content="Jarred Herrington">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <div id="navbar">
+                <a href="index.html" class="navitem">Home</a>
+                <a href="portfolio.html" class="navitem">Portfolio</a>
+                <a href="#" class="navitem">Contact</a>
+                <a href="#" class="navitem">Blog</a>
+            </div>
+        </header>
+        <main>
+            <div id="overlay" onClick="off()"></div>
+            <section id="head">
+                <img src="images/logo-with-text.png" id="logo">
+            </section>
+            <section class="portfolio">
+                <img class="grid" src="images/gallery/beholder.png">
+                <img class="grid" src="images/gallery/diorama.png">
+                <img class="grid" src="images/gallery/fire-elemental-set.png">
+                <img class="grid" src="images/gallery/mimic-mug.png">
+                <img class="grid" src="images/gallery/orc-warrior.png">
+                <img class="grid" src="images/gallery/roc.png">
+                <img class="grid" src="images/gallery/rock-golem.png">
+                <img class="grid" src="images/gallery/spider.png">
+                <img class="grid" src="images/gallery/the-obzedat-ghost-council.png">
+                <img class="grid" src="images/gallery/wizard.png">
+                <img class="grid" src="images/gallery/young-dragon.png">
+            </section>
+        </main>
+    </body>
+    <script>
+        let images = document.getElementsByClassName("grid");
+
+        for (let i = 0; i < images.length; i++) {
+            images[i].addEventListener("click", on);
+        }
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</html>
