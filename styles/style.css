@@ -1,5 +1,5 @@
 body {
-        background-color: #010F2B;
+        background-color: black;
 }
 
 #navbar {
@@ -14,17 +14,17 @@ body {
     display: inline;
     text-decoration: none;
     font-size: 1.4em;
-    color: #0DC8FE;
-    transition: 1s color;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
+    color: #9c7c11;
+    transition: 0.3s color;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
 }
 
 .navitem:hover {
-    color: #9ef7ff;
-    text-shadow: #9ef7ff 0px 10px 2.5px;
+    color: #e2142d;
+    text-shadow: #e2142d 0px 10px 2.5px;
 }
 
 #logo {
@@ -55,10 +55,42 @@ body {
     height: auto;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media, .email{
+    font-size: 2em;
+    padding: 0 1em 0em 1em;
+    font-family: 'Abel', cursive;
+}
+
+.social-media > img {
+    height: 2em;
+    width: 2em;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    filter: gray;
+}
+
+.social-media > img:hover {
+    filter: grayscale(0);
+    filter: none;
+}
+
 h1 {
     text-align: center;
-    font-family: 'Amita', cursive;
-    font-size: 3.5em;
+    font-family: 'Skranji', cursive;
+    font-size: 4em;
+    color: #400000;
+}
+
+h2 {
+    font-family: 'Skranji', cursive;
+    font-size: 2em;
+    color: #400000;
 }
 
 .default-text {
@@ -83,7 +115,7 @@ h1 {
     height: 18em;
     width: 18em;
     opacity: 40%;
-    border: 3px solid white;
+    border: 4px solid white;
 }
 
 .portfolio img:hover {
@@ -110,8 +142,6 @@ h1 {
 #lightbox img {
     max-width: 90%;
     max-height: 90%;
-    padding: .8em;
-    background-color: black;
     border: 5px solid white;
 }
 
