@@ -100,6 +100,20 @@ h2 {
     padding: 2em 0 1em 0;
 }
 
+.blog-title {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    color: black;
+}
+
+.blog-post {
+    display: flex;
+    align-self: center;
+    font-family: 'Abel', cursive;
+    font-size: 1.2em;
+    width: 25%;
+}
+
 .portfolio {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
