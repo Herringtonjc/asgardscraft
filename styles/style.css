@@ -1,5 +1,5 @@
 body {
-        background-color: black;
+        background-color: #000c24;
 }
 
 #navbar {
@@ -10,11 +10,11 @@ body {
 
 .navitem {
     padding-left: 0.3em;
-    font-family: 'abel', cursive;
+    font-family: 'Abel', cursive;
     display: inline;
     text-decoration: none;
     font-size: 1.4em;
-    color: #9c7c11;
+    color: #0dc8fe;
     transition: 0.3s color;
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
@@ -23,8 +23,8 @@ body {
 }
 
 .navitem:hover {
-    color: #e2142d;
-    text-shadow: #e2142d 0px 10px 2.5px;
+    color: #93e6fd;
+    text-shadow: #0dc8fe 0px 10px 2.5px;
 }
 
 #logo {
@@ -84,34 +84,42 @@ h1 {
     text-align: center;
     font-family: 'Skranji', cursive;
     font-size: 4em;
-    color: #400000;
+    color: #001744;
 }
 
 h2 {
     font-family: 'Skranji', cursive;
     font-size: 2em;
-    color: #400000;
+    color: #001744;
 }
 
 .default-text {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Abel', cursive;
     font-size: 2em;
     padding: 2em 0 1em 0;
 }
 
+.blog {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .blog-title {
-    text-align: center;
     padding: 1em 0 1em 0;
     color: black;
 }
 
 .blog-post {
-    display: flex;
-    align-self: center;
     font-family: 'Abel', cursive;
-    font-size: 1.2em;
+    font-size: 1.5em;
     width: 25%;
+    color: black;
 }
 
 .portfolio {
@@ -161,6 +169,11 @@ h2 {
 
 footer {
     height: 10vh;
+}
+
+footer > p {
+    font-family: 'Abel', cursive;
+    font-size: 1.2em;
 }
 
 .foot-text {
