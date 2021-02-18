@@ -159,4 +159,21 @@ h2 {
     border: 5px solid white;
 }
 
+footer {
+    height: 10vh;
+}
+
+.foot-text {
+    padding-top: 2em;
+    color: white;
+}
+
+#left-foot  {
+    float: left;
+}
+
+#right-foot {
+    float: right;
+}
+
 /* Add mobile responsive */
