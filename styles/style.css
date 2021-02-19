@@ -218,10 +218,18 @@ footer > p {
         flex-flow: row wrap;
     }
     #logo {
-        content: url(../images/logo-no-text.png);
-        width: 100%;
+        content: url("/images/logo-no-text.png");
+        display: block;
+        width: 50%;
     }
     header {
         height: 100vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #logo {
+        display: block;
+        width: 100%;
     }
 }
