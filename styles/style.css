@@ -25,6 +25,7 @@ h2 {
 }
 
 /* Navbar */
+
 nav {
     position: absolute;
     top: 0;
@@ -51,6 +52,7 @@ nav {
 }
 
 /* Logo image */
+
 #logo {
     display: block;
     margin: auto;
@@ -68,6 +70,7 @@ nav {
 }
 
 /* Default text areas */
+
 .text-area {
     display: flex;
     flex-flow: column nowrap;
@@ -86,6 +89,7 @@ nav {
 }
 
 /* Contact area on contact page */
+
 #contact-area {
     display: flex;
     flex-flow: row wrap;
@@ -113,6 +117,7 @@ nav {
 }
 
 /* Blog area */
+
 #blog {
     background-color: white;
     display: flex;
@@ -133,11 +138,12 @@ nav {
 }
 
 /* Gallery area */
+
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1em;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -157,6 +163,7 @@ nav {
 }
 
 /* Lightbox area */
+
 #lightbox {
     position: fixed;
     z-index: 100;
@@ -180,6 +187,7 @@ nav {
 }
 
 /* Footer area */
+
 footer {
     height: 10vh;
 }
@@ -203,3 +211,17 @@ footer > p {
 }
 
 /* Mobile Responsive */
+
+@media screen and (max-width: 1200px) {
+    #gallery {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #logo {
+        content: url(../images/logo-no-text.png);
+        width: 100%;
+    }
+    header {
+        height: 100vh;
+    }
+}
